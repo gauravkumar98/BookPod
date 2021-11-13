@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--icon link-->
+  <script src="https://kit.fontawesome.com/cecf3854a2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--Navigation Bar-->
+  <nav class="navbar">
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <p class="logoText">BookPod<span style="color: #113CFC;">.</span></p>
+    <ul>
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Categories</a></li>
+      <li><a href="#" class="nav-link">Podcasts</a></li>
+    </ul>
+
+    <div>
+      <input type="text" id="searchInput" placeholder="Search..">
+    </div>
+  </nav>
+  <!--  Navigation Bar end-->
+
+  <div class="">
+    <center>
+      <p class="head">Home of <span id="hundred"> 100,000+</span> <br> books and podcasts</p>
+      <p class="col">Get the latest books and listen to the <br> latest podcasts all in one place</p>
+      <button type="button" name="button">Get Started</button>
+    </center>
+  </div>
+  <br><br>
+
+  <!-- neew -->
+  <div class="second">
+    <div class="big_img">
+    </div>
+    <div class="content">
+      <div class="inside_content">
+        <h4 style="color:#0F00FF">LOREM IPSUM</h4>
+        <h1>Lorem Ipsum dolor sit amet</h1>
+        <p style="color:grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="social">
+        <div class="social1">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="social1">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="social1">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="social1">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--testimonia-->
+  <div class="testimonial">
+    <h3>Featured Writers</h3>
+    <div class="profile_container">
+
+      <div class="profile">
+        <div>
+          <img class="img" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="E R Braithwaite">
+        </div>
+        <p>E R Braithwaite</p>
+      </div>
+
+      <div class="profile">
+        <div>
+          <img  class="img" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Andrea Levy">
+        </div>
+        <p>Andrea Levy</p>
+      </div>
+
+      <div class="profile">
+        <div>
+            <img  class="img" src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Stephen King">
+        </div>
+        <p>Stephen King</p>
+      </div>
+      <div class="profile">
+        <div>
+  <img  class="img" src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Jorge Amado">
+        </div>
+        <p>Jorge Amado</p>
+      </div>
+    </div>
+    <div class="profile_container1">
+      <div class="profile">
+        <div>
+  <img class="img" src="https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Galye Forman">
+        </div>
+        <p>Galye Forman</p>
+      </div>
+      <div class="profile">
+        <div >
+  <img class="img" src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        </div>
+        <p>Shashi Tharoor</p>
+      </div>
+      <div class="profile">
+        <div>
+  <img class="img" src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="J.K. Rowling">
+        </div>
+        <p>J.K. Rowling</p>
+      </div>
+      <div class="profile">
+        <div >
+  <img class="img" src="https://images.pexels.com/photos/1680175/pexels-photo-1680175.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="John Green">
+        </div>
+        <p>John Green</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("ul");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+</body>
+
+</html>
